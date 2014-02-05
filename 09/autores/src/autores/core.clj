@@ -1,37 +1,37 @@
 (ns autores.core
-  (:require [crouton.html   :as html]
-            [clojure.pprint :as pp]
-            [clojure.walk   :as walk]))
+  (:require [clojure.pprint :as pp]
+            [net.cgrand.enlive-html :as en]
+            [clojure.string :as str])
+  (:import  [java.net URL]))
 
-(defn- read-link [node]
-  (let [link ((node :attrs) :href)]
-    link))
+(defn- get-links [url]
+  (let [links (-> url
+                  URL. 
+                  en/html-resource
+                  (en/select [:body :section :a]))]
+      (filter
+        #(. % contains "livro")
+        (map #(str url ((% :attrs) :href)) 
+             links))))
 
-(defn- trasverse [node]
-  (cond (map? node)
-          (if (= :a (node :tag))
-            (read-link node)
-            (trasverse (node :content)))
-        (vector? node)
-          (map trasverse node)
-        :else node))
-
-(defn- remove-spaces [dom]
-  (filter map? (dom :content)))
-
-(defn- get-body [dom]
-  (first 
-    (filter #(= :body (% :tag)) 
-            (remove-spaces dom))))
-
-(defn- get-section [dom]
-  (first
-    (filter #(= :section (% :tag))
-            (remove-spaces dom))))
+(defn- get-author [url]
+  (let [authors (-> url
+                    URL.
+                    en/html-resource
+                    (en/select [:span.product-author-link]))]
+    (str/split
+      (str/replace
+        (first
+          ((first authors) :content))
+        #"(\n|  )" "")
+      #"(, | e )")))
 
 (defn -main [& args]
-  (let [section (-> "http://www.casadocodigo.com.br"
-                 html/parse
-                 get-body
-                 get-section)]
-    (println (walk/prewalk trasverse section))))
+  (pp/pprint
+    (reverse 
+      (sort-by last
+        (frequencies
+          (flatten
+            (pmap get-author 
+                 (get-links "http://www.casadocodigo.com.br")))))))
+  (shutdown-agents))
