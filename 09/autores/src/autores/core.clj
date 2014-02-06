@@ -28,10 +28,10 @@
 
 (defn -main [& args]
   (pp/pprint
-    (reverse 
-      (sort-by last
-        (frequencies
-          (flatten
-            (pmap get-author 
-                 (get-links "http://www.casadocodigo.com.br")))))))
+    (->> "http://www.casadocodigo.com.br"
+         get-links
+         (pmap get-author)
+         flatten
+         frequencies
+         (sort-by last >)))
   (shutdown-agents))
