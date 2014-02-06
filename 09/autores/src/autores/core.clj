@@ -27,11 +27,15 @@
       #"(, | e )")))
 
 (defn -main [& args]
+  (println "Os autores com mais publicações na Casa do Código:")
   (pp/pprint
     (->> "http://www.casadocodigo.com.br"
          get-links
          (pmap get-author)
          flatten
          frequencies
-         (sort-by last >)))
+         (sort-by last >)
+         (group-by last)
+         first
+         last))
   (shutdown-agents))
