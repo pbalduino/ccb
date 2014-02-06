@@ -35,7 +35,6 @@
          flatten
          frequencies
          (sort-by last >)
-         (group-by last)
-         first
-         last))
+         (partition-by last)
+         first))
   (shutdown-agents))
