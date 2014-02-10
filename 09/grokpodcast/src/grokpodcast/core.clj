@@ -5,7 +5,7 @@
             [net.cgrand.enlive-html :as en])
   (:import  [java.net URL]))
 
-(def file-dir "C:\\Documents and Settings\\pbalduino\\Meus documentos\\grokpodcast\\")
+(def file-dir "~/Music/grokpodcast/")
 
 (defn- get-archive [url]
   (map
