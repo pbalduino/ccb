@@ -1,0 +1,29 @@
+// Load script
+function loadScript(e,t){var n=document.createElement("script");n.type="text/javascript";if(n.readyState){n.onreadystatechange=function(){if(n.readyState=="loaded"||n.readyState=="complete"){n.onreadystatechange=null;t()}}}else{n.onload=function(){t()}}n.src=e;document.getElementsByTagName("head")[0].appendChild(n)}
+
+// Cookies
+function getCookies(){var e=document.cookie,t=0,n={};if(document.cookie.match(/^\s*\$Version=(?:"1"|1);\s*(.*)/)){e=RegExp.$1;t=1}if(t===0){e.split(/[,;]/).map(function(e){var t=e.split(/=/,2),r=decodeURIComponent(t[0].trimLeft()),i=t.length>1?decodeURIComponent(t[1].trimRight()):null;n[r]=i})}else{e.match(/(?:^|\s+)([!#$%&'*+\-.0-9A-Z^`a-z|~]+)=([!#$%&'*+\-.0-9A-Z^`a-z|~]*|"(?:[\x20-\x7E\x80\xFF]|\\[\x00-\x7F])*")(?=\s*[,;]|$)/g).map(function(e,t){var r=e,i=t.charAt(0)==='"'?t.substr(1,-1).replace(/\\(.)/g,"$1"):t;n[r]=i})}return n}function getCookie(e){return getCookies()[e]}if(typeof String.prototype.trimLeft!=="function"){String.prototype.trimLeft=function(){return this.replace(/^\s+/,"")}}if(typeof String.prototype.trimRight!=="function"){String.prototype.trimRight=function(){return this.replace(/\s+$/,"")}}if(typeof Array.prototype.map!=="function"){Array.prototype.map=function(e,t){for(var n=0,r=this.length,i=[];n<r;n++){if(n in this)i[n]=e.call(t,this[n])}return i}}
+
+// Tracking pixel with IP capture
+var tracking_pixel = function($){
+//	$.ajax({ 
+//	    type: 'GET',
+//	    url: 'https://www.refersion-tracker.com/ip?callback=?' ,
+//	    dataType: 'jsonp', 
+//	    success: function(data) { 
+//	        var image = new Image(); document.body.appendChild(image); image.src = "https://www.refersion.com/tracker/shopify?shop=casadocodigo.myshopify.com&i="+data.ip+"&sci="+getCookie('cart'); image.setAttribute('style', 'float: right;');
+//	    }
+//	});
+    var image = new Image(); document.body.appendChild(image); image.src = "https://www.refersion.com/tracker/shopify?shop=casadocodigo.myshopify.com&i=NULL&sci="+getCookie('cart'); image.setAttribute('style', 'float: right;');
+};
+
+
+// Load tracking
+if ((typeof jQuery === 'undefined') || (parseFloat(jQuery.fn.jquery) < 1.7)) {
+	loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', function() {
+		refersion_jq = jQuery.noConflict(true);
+		tracking_pixel(refersion_jq);
+			});
+} else {
+	tracking_pixel(jQuery);
+	}

@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://www.casadocodigo.com.br/ -->
+<html class=" -webkit- js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="pt"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/favicon.ico?25498" type="image/ico"> 
+  <link href="https://plus.google.com/108540024862647200608" rel="publisher">
+
+  
+    <title>Livros de Java, SOA, Android, iPhone, Ruby on Rails e muito mais - Casa do Código</title>
+    <meta property="og:site_name" content="casadocodigo.com.br">
+    <meta property="og:title" content="Casa do Código - Livros para o programador">
+    <meta property="og:description" content="Casa do Código é uma editora feita de programadores para programadores. Android, iOS, Startups, JavaScript, jQuery, HTML, Agile, Java e mais">
+
+    <meta property="og:url" content="http://www.casadocodigo.com.br">
+    <meta property="og:type" content="book">
+    <meta property="og:image" content="//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/logo-social.jpg?25498">
+
+    <meta itemprop="name" content="Livros de Java, SOA, Android, iPhone, Ruby on Rails e muito mais - Casa do Código">
+    <meta name="description" content="Os melhores livros sobre Java, Ruby, Rails, Android, iPhone, SOA, HTML, CSS, Empreendedorismo e muito mais. Feitos por programadores para programadores.">
+    <meta itemprop="image" content="//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/casa-do-codigo.png?25498">
+
+  
+
+  <style media="all" data-href="//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/cssbase-min.css?25498">/*
+YUI 3.5.1 (build 22)
+Copyright 2012 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}/*
+YUI 3.5.1 (build 22)
+Copyright 2012 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif}table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}#yui3-css-stamp.cssfonts{display:none}/*
+YUI 3.5.1 (build 22)
+Copyright 2012 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong{font-weight:bold}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}p,fieldset,table,pre{margin-bottom:1em}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em}#yui3-css-stamp.cssbase{display:none}</style>
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" data-inprogress="">
+  <style media="all" data-href="//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fonts.css?25498">@font-face {
+  font-family: 'Museo';
+  font-style: normal;
+  font-weight: normal;
+  src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/museo-500.eot");
+  src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/museo-500.eot?#iefix") format('embedded-opentype'),
+       url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/museo-500.woff") format('woff'),
+       url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/museo-500.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Museo';
+  font-style: normal;
+  font-weight: bold;
+  src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/museo-700.eot");
+  src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/museo-700.eot?#iefix") format('embedded-opentype'),
+       url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/museo-700.woff") format('woff'),
+       url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/museo-700.ttf") format('truetype');
+}
+</style>
+  <style media="all" data-href="//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello-ie7.css?25498">[class^="icon-"], [class*=" icon-"] {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+ 
+  /* fix buttons height */
+  line-height: 1em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+ 
+.icon-basket-alt { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }</style>
+  <style media="all" data-href="//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello-embedded.css?25498">@font-face {
+  font-family: 'fontello';
+  src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello.eot?82454233");
+  src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello.eot?82454233#iefix") format('embedded-opentype'),
+       url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello.svg?82454233#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('data:application/octet-stream;base64,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') format('woff'),
+       url('data:application/octet-stream;base64,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') format('truetype');
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/../font/fontello.svg?82454233#fontello") format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-basket-alt:before { content: '\e800'; } /* '' */</style>
+  <style media="all" data-href="//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello.css?25498">@font-face {
+  font-family: 'fontello';
+  src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello.eot?3398089");
+  src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello.eot?3398089#iefix") format('embedded-opentype'),
+       url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello.woff?3398089") format('woff'),
+       url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello.ttf?3398089") format('truetype'),
+       url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/fontello.svg?3398089#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url("http://cdn.shopify.com/s/files/1/0155/7645/t/157/assets/../font/fontello.svg?3398089#fontello") format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-basket-alt:before { content: '\e800'; } /* '' */</style>
+  
+    
+  
+  <style media="all" data-href="//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/style.css?25498">.lt-ie9  .form-newsletter{
+  display: none;
+}
+.lt-ie9 .ie8{
+  display: inline;
+}
+
+.ie8{
+  display: none;
+}
+.error-notfound {
+  margin: 30px 20px;
+}
+
+.error-notfound img {
+  float:left;
+  margin-right: 40px;
+}
+
+h1, h2, h3,
+h4, h5{
+  font-family: "Museo", Sans-serif;
+  font-weight: normal;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+small {
+  font-size: 10px;
+}
+
+.block {
+  display: block;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+html {
+  color: rgb(51,51,51);
+}
+
+body {
+  font-family: "Droid Sans", Arial, Sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+p{
+  line-height: 1.4;
+  font-size:147%;
+}
+
+a{
+  line-height: 1.4;
+  font-size:19px;
+}
+
+h4{
+  font-size: 13px;
+}
+
+h2 {
+  font-size: 160%;
+}
+
+h3,h1{
+  font-size: 21.5px;
+}
+
+.container {
+  max-width: 1280px;
+  width:100%;
+  margin: 0 auto;
+  padding: 0 7px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.middle {
+  min-height: 350px;
+}
+
+.section-title {
+  border-bottom: 1px dotted rgb(239,112,0);
+  color: rgb(239,112,0);
+  font-size:200%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#layout-header {
+  background: rgb(0,0,0);
+  width:100%;
+}
+
+.categories-nav {
+    background-color: #584534;
+}
+
+.categories-nav > ul {
+    text-align: left;
+    padding-top: 5px;
+}
+
+.category {
+    display: inline-block;
+    font-size: 0;
+}
+
+.category > a {
+    display: inline-block;
+    font-size: 14px;
+    padding: .4em 1.7em;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.category > a:hover {
+    background-color: rgba(153, 112, 76, 0.5);
+}
+
+.category:first-child > a {
+    border-left: 0;
+}
+
+#logo {
+  float: left;
+  margin: 0;
+}
+
+
+#logo a {
+  background: url('//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/casa-do-codigo.png?25294') no-repeat;
+  display: block;
+  height: 66px;
+  padding: 11px 0;
+  text-indent: -9999px;
+  width: 228px;
+  background-position: 0px;
+}
+
+#header-content {
+  float: right;
+}
+
+/*Footer*/
+
+#layout-footer {
+  background: rgb(0,0,0);
+  color: rgb(255,255,255);
+  padding: 25px 0;
+  clear: both;
+  width:100%;
+  font-size: 16px;
+}
+
+.footer-title {
+  color: #EF7000;
+  margin:19px 0;
+  font-size: 16px;
+  font-family: "Museo", Sans-serif;
+}
+
+#submit-newsletter{
+  background-color: #F86713;
+  padding: 10px 5px;
+  color: white;
+  font-size: 16px;
+  width: 70%;
+  max-width: 200px;
+  margin-top: 10px;
+  font-family: 'Droid Sans', Arial, sans-serif;
+
+}
+
+#form-newsletter input{
+  width: 69%;
+  padding: 2% 0%;
+  margin-left: 5%;
+  border:0;
+  max-width: 200px;
+  font-family: 'Droid Sans', Arial, sans-serif;
+  border:0;
+}
+
+.ss-q-short{
+  text-indent: 10px;
+}
+
+#submit-newsletter{
+  margin-bottom: 5%;
+}
+
+#layout-footer ul {
+  list-style: none;
+  margin-left:1em;
+}
+
+#layout-footer a{
+  font-size: 13px;
+}
+
+#twitter {
+  display: block;
+  background: url('//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/sprites.png?25294') no-repeat -8px -242px;
+  width: 31px;
+  height: 31px;
+  text-indent: -9999px;
+  float: left;
+  margin: -10px 0px 0px 1%;
+}
+
+#facebook {
+  display:block;
+  background: url('//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/sprites.png?25294') no-repeat -42px -242px;
+  width: 31px;
+  height: 31px;
+  text-indent: -9999px;
+  float: left;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+#paypal {
+  float: left;
+  margin-left: 20px;
+}
+
+#social-footer .newsletter-call {
+  clear: both;
+  margin-bottom: 35px;
+  font-size:13px;
+}
+
+#layout-footer ul li {
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+#layout-footer ul .social-links{
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.accepts-paypal{
+  margin-left: -7px;
+}
+
+#layout-footer a {
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+
+#layout-footer a:hover {
+  text-decoration: underline;
+}
+
+#cdc-footer {
+  width: 30%;
+  float: left;
+  margin-top: 20px;
+}
+#books-footer {
+  width: 30%;
+  float: left;
+  margin-top: 20px;
+}
+#social-footer {
+  width: 40%;
+  float: left;
+  margin-top: 20px;
+}
+
+#customer-area {
+  color: rgb(255,255,255);
+  float: left;
+  font-size: 12px;
+}
+
+#customer-area p,
+#customer-area nav {
+  display: inline;
+}
+
+#customer-area p {
+  margin-right: 5px;
+}
+
+#customer-area a:link,
+#customer-area a:visited {
+  color: rgb(204,153,0);
+}
+
+#customer-area a:hover {
+  color: rgb(255,204,51);
+  text-shadow: 0 0 2px rgb(255,204,51);
+}
+
+#customer-area a:active {
+  color: rgb(255,204,51);
+  text-shadow: 0 0 3px rgb(255,255,102);
+}
+
+#search-form {
+  float: left;
+  position: relative;
+}
+
+#search-input {
+  border: 1px solid rgb(153,153,153);
+  margin: -4px 0 0 20px;
+  padding: 2px 12px 2px 2px;
+}
+
+#search-input:focus {
+  border: 1px solid rgb(255,255,102);
+  box-shadow: 0 0 3px rgb(255,204,51);
+}
+
+#search-submit {
+  position: absolute;
+  right: 3px;
+  top: 0;
+}
+
+#main-nav {
+  float: left;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+#main-nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+
+#main-nav ul li {
+  float: left;
+  margin-left: 35px;
+  height: 100%;
+  border-bottom: 7px solid rgb(0,0,0);
+  border-top: 7px solid rgb(0,0,0);
+}
+
+#main-nav ul li:hover {
+  border-bottom: 7px solid rgb(239,112,0);
+}
+
+#main-nav ul li a{
+  font: 23px "Museo", Sans-serif;
+  height: 74px;
+  line-height: 74px;
+  display:block;
+}
+
+#main-nav ul li a:link,
+#main-nav ul li a:visited {
+  color: rgb(245,245,245);
+  text-decoration: none;
+}
+
+#main-nav ul li a:hover,
+#main-nav ul li a:active {
+  color: rgb(220,220,220);
+}
+
+/* Index */
+
+#home-collection-title {
+    color: rgb(239,112,0);
+    font-size:22px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.book-collection {
+  list-style: none;
+  margin: 0;
+}
+
+.book-collection li:not(:nth-child(6n+1)){
+    margin-left: 6.2%;
+}
+
+.book-collection li {
+  float: left;
+  position: relative;
+  width: 11.5%;
+  min-width: 143px;
+  height: 315px;
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.book-collection li a img {
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  margin: 10px 0;
+}
+
+.book-collection li a h1 {
+  color: rgb(239,112,0);
+  font-size: 18px;
+  margin-bottom: 5px;
+  height: 2.1em;
+}
+
+
+.book-collection li a p {
+  font-size: 12px;
+}
+
+.book-collection li a:link,
+.book-collection li a:visited {
+  color: rgb(51,51,51);
+  text-decoration: none;
+}
+
+.book-collection li a:hover h1{
+    color: #ef7502;
+}
+
+.book-collection li a:hover small{
+    background-color: #ef7502;
+}
+
+.book-collection li a:hover img,
+.book-collection li a:active img {
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.book-collection li a:hover p,
+.book-collection li a:active p {
+  color: rgb(102,102,102);
+  text-decoration: none;
+}
+
+.book-collection li a small {
+  background: rgb(239,112,0);
+  color: rgb(255,255,255);
+  display:none;
+  font-size: 19px;
+  margin: 0 auto 10px;
+  width: 143px;
+  text-align: center;
+  height:36px;
+  line-height:36px;
+}
+
+.book-collection .buy-button:after{
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    vertical-align: middle;
+    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 15px solid white;
+    margin-left: .7em;
+}
+
+.book-collection li a:active small,
+.book-collection li a:hover small {
+  display:block;
+}
+
+#home-highlight-collection{
+  margin:0;
+  overflow: hidden;
+}
+
+#home-highlight-collection li{
+  float: left;
+  position: relative;
+  margin-top: 26px;
+  width: 31.3%;
+  list-style: none;
+}
+
+#home-highlight-collection li:not(:first-child){
+    margin: 26px 0 0 3%;
+}
+
+#home-highlight-collection li a{
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+#home-highlight-collection li a:hover h1{
+    color:#ef7502;
+}
+
+#home-highlight-collection li a:hover small{
+    background-color:#ef7502;
+}
+
+#home-highlight-collection li a h1{
+  color: #EF7000;
+  font-size: 25px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 8.8em;
+  height: 7.5em;
+  line-height: 1.7;
+  word-wrap: break-word;
+}
+
+#home-highlight-collection li a img{
+  float: left;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  margin-right: 20px;
+}
+
+#home-highlight-collection li a small{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FB7B00;
+  color: #FFFFFF;
+  display: block;
+  font-size:25px;
+  left: 175px;
+  bottom: 15px;
+  position: absolute;
+  text-align: center;
+  width: 55.7%;
+  line-height: 1.7;
+}
+
+.cdc-call{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  clear:both;
+  background-color: #FDECD3;
+  text-align: center;
+  font-size: 33px;
+  padding-top: 4px;
+  line-height: 48px;
+  color: #F07D22;
+  margin: 26px 0;
+}
+
+
+/* Diferenciais */
+
+#cdc-diferenciais{
+  width:100%;
+  margin:0;
+}
+
+#cdc-diferenciais li{
+  float: left;
+  list-style: none;
+  width: 47%;
+}
+
+#cdc-diferenciais li.col-left{
+  margin-right: 6%;
+}
+
+#cdc-diferenciais li h3{
+  font-size:21px;
+  color: #EF7000;
+}
+
+#cdc-diferenciais li img{
+  float: left;
+  margin-right: 10px;
+}
+
+#cdc-diferenciais li p{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  font-size:17px;
+  padding-left:10px;
+}
+
+
+/* Collection */
+
+.collection-header {
+   position: relative;
+   z-index: -1;
+}
+
+#collection-livros-de-java, #collection-livros-de-mobile, #collection-livros-de-ruby {
+    background-position: center center;
+}
+
+.collection-header:before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    width: 40%;
+    min-width: 500px;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+}
+
+#collection-title {
+    color: #F58220;
+    font-size: 40px;
+    display: inline-block;
+    margin: 0;
+    padding: 61px 0;
+    z-index: 1;
+}
+
+#collection {
+  list-style: none;
+  margin: 0;
+}
+
+#collection li {
+  border-bottom: 1px dotted rgb(204,204,204);
+  margin: 5px;
+  padding: 15px;
+  position: relative;
+  width: 435px;
+  display:inline-block;
+}
+
+#collection li a img {
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  float: left;
+  margin: 10px;
+}
+
+#collection li a small {
+  background: rgb(245,245,245);
+  bottom: 25px;
+  display: block;
+  padding: 5px;
+  position: absolute;
+  right: 25px;
+}
+
+#collection li a h3 {
+  color: rgb(239,112,0);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
+#collection li a p {
+  font-size: 12px;
+}
+
+#collection li a:link,
+#collection li a:visited {
+  color: rgb(51,51,51);
+  text-decoration: none;
+}
+
+#collection li a:hover,
+#collection li a:active {
+  background: rgb(245,245,245);
+}
+
+#collection li a:hover img,
+#collection li a:active img {
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+#collection li a:hover small,
+#collection li a:active small {
+  background: rgb(239,112,0);
+  color: rgb(255,255,255);
+}
+
+#collection li a:hover p,
+#collection li a:active p {
+  color: rgb(102,102,102);
+  text-decoration: none;
+}
+
+#collection.related-books li{
+  width: 136px;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin:0;
+}
+
+/* Cart */
+
+#cart-title {
+  border-bottom: 1px dotted rgb(239,112,0);
+  color: rgb(239,112,0);
+  font-size: 22px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.cart-message {
+  margin-top: 25px;
+}
+
+#cart-table {
+  margin-top: 15px;
+}
+
+#form-cart{
+  font:16px;
+}
+
+#cart-table thead {
+  background: rgb(220,220,220);
+}
+
+#cart-table th,
+#cart-table td {
+  padding: inherit 15px;
+  font-size: 16px;
+}
+
+#cart-table tr {
+  border-bottom: #CCC 1px solid;
+}
+
+.cart section.container table {
+  border: none;
+  width: 100%;
+}
+
+.cart section.container table th,
+.cart section.container table td {
+  border: none;
+}
+
+.item-price-col,
+.line-price-col {
+  background: rgb(245,245,245);
+}
+
+.numberic-cell {
+  text-align: right;
+}
+
+.quantity-input-cell input {
+  width: 3em;
+}
+
+.quantity-input-cell {
+  text-align: center;
+}
+
+#buying-instructions {
+  line-height:1.5;
+  font-size:19px;
+  background-color:#f9e8d9;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding:10px;
+  width: 100%;
+}
+
+.beta-in-price {
+  font-size: 10px;
+}
+
+#checkout{
+    margin-left: 0.5em;
+    height: 27px;
+    width: 186px;
+    cursor: pointer;
+    background-image: url('//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/checkout_paypal.png?25294');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+.update-cart {
+  background: url('//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/refresh.png?25294') no-repeat;
+  height: 24px;
+  width: 24px;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+/* Search */
+
+#search-title {
+  border-bottom: 1px dotted rgb(239,112,0);
+  color: rgb(239,112,0);
+  font-size:22px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  z-index:4;
+}
+
+.search-message {
+  margin-top: 25px;
+}
+
+/* Login */
+
+#recover-password-area {
+  display: none;
+}
+
+/* Sprites */
+
+.sprite{
+  float: left;
+  margin-right: 10px;
+}
+
+.col-left .sprite{
+    margin-bottom: 3.5%;
+}
+
+#sprite-atualizacoes {
+  background: url('//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/sprites.png?25294')no-repeat -7px -5px;
+  width: 48px;
+  height: 44px;
+}
+
+#sprite-drm {
+  background: url('//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/sprites.png?25294') no-repeat -7px -57px;
+  width: 48px;
+  height: 48px;
+}
+
+#sprite-renome {
+  background: url('//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/sprites.png?25294') no-repeat -7px -117px;
+  width: 79px;
+  height: 57px;
+}
+
+#sprite-caelum {
+  background: url('//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/sprites.png?25294')no-repeat -7px -186px;
+  width: 70px;
+  height: 53px;
+}
+
+.breadcrumb {
+    display: inline;
+}
+
+.breadcrumb > a {
+    font-size: .9em;
+}
+
+.breadcrumbs {
+    display: block;
+}
+</style>
+
+  <style media="all" data-href="//cdn.shopify.com/s/files/1/0155/7645/t/157/assets/responsivo-style.css?25498">@media print { }
+
+@media only screen and (max-width: 1280px){
+    .container {
+        max-width: 1124px;
+    }
+
+    #home-highlight-collection li a small{
+        clear: left;
+        position: static;
+        width: 100%;
+    }
+
+    #home-highlight-collection li a h1{
+        font-size: 23px;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        width: 7.25em;
+    }
+
+    #home-highlight-collection li a img {
+        margin-bottom: 1em;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .book-collection li:not(:nth-child(6n+1)){
+        margin-left: 4.5%;
+    }
+
+}
+
+@media only screen and (max-width: 1124px) {
+
+    .container{
+        max-width: 960px;
+    }
+
+    #home-highlight-collection li a{
+        text-align: center;
+    }
+
+     #home-highlight-collection li a img{
+        float: none;
+        margin-bottom: .4em;
+        margin-right: 0;
+     }
+
+    #home-highlight-collection li a small{
+        font-size: 17px;
+        line-height: 2em;
+    }
+
+    #home-highlight-collection li a h1 {
+        display: table-cell;
+        height: 5.5em;
+        line-height: 1.5em;
+        width: 13em;
+    }
+
+    .book-collection li {
+        width: 15.5%;
+    }
+
+    .book-collection li:not(:nth-child(6n+1)) {
+        margin-left: 0;
+    }
+
+    .book-collection li:not(:nth-child(5n+1)) {
+        margin-left: 5.6%;
+    }
+
+
+}
+
+@media only screen and (max-width: 992px) {
+    /* listagem de livros */
+    .book-collection li {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .book-collection li:not(:nth-child(5n+1)) {
+        margin-left: 4.6% ;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+    #cdc-diferenciais ul li{
+        width:100%;
+    }
+    #cdc-diferenciais ul li p{
+        width:70%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    #main-nav {
+        margin:0;
+    }
+
+    #main-nav ul li a{
+        font-size: 17px;
+    }
+
+    /* listagem de livros */
+
+    /* Destaques */
+
+    #cdc-diferenciais li p{
+      width:70%;
+    }
+
+    .container {
+        max-width: 830px;
+    }
+
+    .book-collection li{
+        margin-bottom: 30px;
+    }
+
+    .book-collection li:not(:nth-child(5n+1)) {
+        margin-left: 0;
+    }
+
+    .book-collection li:not(:nth-child(4n+1)) {
+        margin-left: 9.9%;
+    }
+
+}
+
+@media only screen and (max-width: 830px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    .book-collection li:not(:nth-child(4n+1)) {
+        margin-left: 7.9%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        max-width: 728px;
+    }
+
+    #home-highlight-collection li:not(:first-child) {
+        margin: 26px auto;
+    }
+
+    .book-collection li:not(:nth-child(4n+1)) {
+        margin-left: 6.5%;
+    }
+
+    #logo a {
+        background-size: 100%;
+        width: 200px;
+    }
+    /* footer */
+    #cdc-footer {
+        width:50%;
+    }
+    #books-footer {
+        width:50%;
+    }
+    #social-footer {
+        clear:left;
+        width:100%;
+    }
+    #cdc-footer a, #books-footer a, #social-footer a {
+        text-decoration: underline;
+    }
+    #social-footer p.footer-title, #social-footer p {
+        margin-left:25px;
+    }
+    #social-footer p.newsletter-call {
+        margin-bottom:20px;
+    }
+
+    #home-highlight-collection li{
+        width: 100%;
+    }
+
+     #home-highlight-collection li a img{
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 0;
+     }
+
+    #home-highlight-collection li a small{
+       position: absolute;
+	   font-size: 25px;
+	   width: 253px
+    }
+
+    #home-highlight-collection li a h1{
+	   display: block;
+	   height: auto;
+       width: auto;
+       font-size: 25px;
+       text-align: left;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+
+    .container{
+        max-width: 650px;
+     }
+
+        /* cabealho */
+    body #header-content {
+        float:none;
+        margin-top:2%;
+        margin-bottom:2%;
+    }
+    #main-nav {
+        float:right;
+        width: 50%;
+        margin-right:0;
+    }
+    #main-nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    body #main-nav ul li {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #2f2f2f;
+        margin: 1px 0;
+        padding: 7px 0;
+        width:100%;
+        float:none;
+        border:0;
+    }
+
+    body #main-nav ul li:hover {
+        border:0;
+    }
+
+    body #main-nav ul li a {
+        height:40px;
+        line-height:40px;
+    }
+
+    body #main-nav ul li:first-child{
+        padding-left: 0;
+    }
+
+    #logo {
+        margin: 0 16px 0 0;
+        width:45%;
+    }
+
+    body #logo a {
+        margin: 10% 0;
+        height: 75px;
+        width:83%;
+    }
+
+    .book-collection li:not(:nth-child(4n+1)) {
+        margin-left: 0;
+    }
+
+    .book-collection li {
+        width: 33.3%;
+    }
+
+    #collection-title{
+        padding: 9.6% 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    /* Destaques */
+
+    #cdc-diferenciais li{
+      width:100%;
+    }
+
+    #cdc-diferenciais li p{
+      float: left;
+      width:81%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    body .bok-collection li {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+
+    body #logo{
+        margin:0;
+        width: 100%;
+    }
+
+    body #logo a{
+        margin:0 auto;
+        height:66px;
+        width:195px;
+    }
+
+    #header-content{
+        margin:0;
+        clear:left;
+    }
+
+    #header-content #main-nav{
+        float:none;
+        width:100%;
+        margin:0;
+    }
+
+    #header-content #main-nav ul > li:not(:first-child){
+        display:none;
+    }
+
+    /* listagem de livros */
+    .book-collection li {
+        width: 100%;
+    }
+
+    #home-highlight-collection li a h3{
+        display:none;
+    }
+
+    #home-highlight-collection li a small{
+        position: static;
+        clear: left;
+        margin: 0 auto;
+        width: 156px;
+    }
+
+    #home-highlight-collection li a img{
+        float: none;
+        margin: 0;
+    }
+
+    #home-highlight-collection li a h1{
+        text-align: center;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+</style>
+
+  <script type="text/javascript" async="" src="./index_files/shopify_stats.js"></script><script type="text/javascript" async="" src="./index_files/saved_resource"></script><script async="" src="http://connect.facebook.net/en_US/fp.js"></script><script type="text/javascript" async="" src="./index_files/dc.js"></script><script type="text/javascript">
+//<![CDATA[
+      var Shopify = Shopify || {};
+      Shopify.shop = "casadocodigo.myshopify.com";
+      Shopify.theme = {"name":"shopify-theme-cdc","id":4991523,"theme_store_id":null,"role":"main"};
+
+//]]>
+</script><style type="text/css"></style>
+
+<script type="text/javascript">
+//<![CDATA[
+    (function() {
+      function asyncLoad() {
+        var urls = ["https://www.refersion.com/tracker/shopify_script_tag/?shop=casadocodigo.myshopify.com"];
+        for (var i = 0; i < urls.length; i++) {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = urls[i];
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+      window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+    })();
+
+//]]>
+</script>
+<script id="__st" type="text/javascript">
+//<![CDATA[
+var __st={"a":1557645,"offset":-7200,"u":"f271d1500366"};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+    (function() {
+      function asyncLoad() {
+        var urls = ["//cdn.shopify.com/s/javascripts/shopify_stats.js?v=6"];
+        for (var i = 0; i < urls.length; i++) {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = urls[i];
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+      window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+    })();
+
+//]]>
+</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(["_setAccount","UA-31796081-1"]);_gaq.push(["_addDevId","o5cUG"]);_gaq.push(["_setAllowLinker",true]);_gaq.push(["_setDomainName","none"]);_gaq.push(["_trackPageview"]);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = 'http://stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script><script type="text/javascript" src="./index_files/ga_urchin_forms.js"></script>
+
+  <script src="./index_files/prefixfree.min.js" type="text/javascript"></script>
+  <script src="./index_files/modernizr-2.5.3.js" type="text/javascript"></script>
+
+  
+  
+  <script src="./index_files/jquery.min.js" type="text/javascript"></script>
+
+<link rel="canonical" href="./index_files/index.html">
+</head>
+<body class="index">
+  <header id="layout-header">
+    <div class="clearfix container">
+      <h1 id="logo">
+        <a href="./index_files/index.html">Casa do Codigo</a>
+      </h1>
+
+      <div id="header-content">
+        <nav id="main-nav">
+              <ul class="clearfix">
+                
+                  
+                    
+                    
+                       <li><a href="http://www.casadocodigo.com.br/cart">Seu carrinho</a></li>
+                     
+                    
+                    
+                
+                  
+                    
+                      <li><a href="http://www.casadocodigo.com.br/pages/sobre-a-casa-do-codigo">Sobre nós</a></li>
+                    
+                    
+                
+                  
+                    
+                      <li><a href="http://www.casadocodigo.com.br/pages/perguntas-frequentes">Perguntas Frequentes</a></li>
+                    
+                    
+                
+              </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <nav class="categories-nav">
+    <ul class="container">
+        <li class="category"><a href="./index_files/index.html">Home</a>
+        
+            
+                </li><li class="category"><a href="http://www.casadocodigo.com.br/collections/livros-de-agile">Agile</a>
+            
+        
+            
+                </li><li class="category"><a href="http://www.casadocodigo.com.br/collections/livros-de-front-end">Front End</a>
+            
+        
+            
+        
+            
+                </li><li class="category"><a href="http://www.casadocodigo.com.br/collections/games">Games</a>
+            
+        
+            
+                </li><li class="category"><a href="http://www.casadocodigo.com.br/collections/livros-de-java">Java</a>
+            
+        
+            
+        
+            
+                </li><li class="category"><a href="http://www.casadocodigo.com.br/collections/livros-de-mobile">Mobile</a>
+            
+        
+            
+        
+            
+                </li><li class="category"><a href="http://www.casadocodigo.com.br/collections/livros-de-ruby">Ruby</a>
+            
+        
+    </li></ul>
+  </nav>
+
+
+  <section id="index-section" class="container middle">
+  
+    
+
+
+    
+    <ul id="home-highlight-collection">
+      
+        <li class="col-left">
+          <a href="http://www.casadocodigo.com.br/products/livro-programador-apaixonado" class="block clearfix">
+            <img width="155" height="216" src="./index_files/Passionate-Programmer-ebook_medium.png" alt=" O Programador Apaixonado" title=" O Programador Apaixonado">
+            <h1 class="product-title">
+                
+                    O Programador Apaixonado
+                            
+            </h1>
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li class="col-right">
+          <a href="http://www.casadocodigo.com.br/products/livro-aspnet-mvc" class="block clearfix">
+            <img width="155" height="216" src="./index_files/ASP-NET_medium.png" alt=" Livro de ASP.NET MVC" title=" Livro de ASP.NET MVC">
+            <h1 class="product-title">
+                
+                        Desenvolvimento web com ASP.NET MVC
+                        
+            </h1>
+            <small class="buy-button">Lançamento!</small>
+          </a>
+        </li>
+      
+        <li class="col-left">
+          <a href="http://www.casadocodigo.com.br/products/livro-jpa-eficaz" class="block clearfix">
+            <img width="155" height="216" src="./index_files/JPA-Eficaz-ebook_medium.png" alt=" Livro JPA Eficaz" title=" Livro JPA Eficaz">
+            <h1 class="product-title">
+                
+                    JPA Eficaz: melhores práticas de persistência em Java
+                            
+            </h1>
+            <small class="buy-button">Novidade!</small>
+          </a>
+        </li>
+      
+    </ul>
+
+
+    <h2 class="cdc-call">Aproveite os preços promocionais de estreia!</h2>
+
+    <ul class="clearfix book-collection">
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-photoshop" class="block clearfix">
+            <h1 class="product-title">Adobe Photoshop</h1>
+            <img width="143" height="202" src="./index_files/Photoshop-ebook_medium.png" alt=" Livro de Adobe Photoshop CS6" title=" Livro de Adobe Photoshop CS6">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/colecao-frameworks-java" class="block clearfix">
+            <h1 class="product-title">Coleção Frameworks Java</h1>
+            <img width="143" height="202" src="./index_files/fwj-thumb-large_large_medium.png" alt=" Coleção Frameworks Java" title=" Coleção Frameworks Java">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-reflexao-anotacoes" class="block clearfix">
+            <h1 class="product-title">Reflection e Annotations</h1>
+            <img width="143" height="202" src="./index_files/Reflexao-ebook_948091d7-f1eb-42ea-a111-074fc2da6213_medium.png" alt=" Livro de Reflexão e Anotações" title=" Livro de Reflexão e Anotações">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-php-mysql" class="block clearfix">
+            <h1 class="product-title">PHP e MySQL</h1>
+            <img width="143" height="202" src="./index_files/PHP-MySQL_medium.png" alt=" Livro de PHP e MySQL" title=" Livro de PHP e MySQL">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-soa-webservices" class="block clearfix">
+            <h1 class="product-title">SOA, web services e além</h1>
+            <img width="143" height="202" src="./index_files/SOA-280_medium.png" alt=" Livro de SOA e Webservices" title=" Livro de SOA e Webservices">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-linux" class="block clearfix">
+            <h1 class="product-title">Linux</h1>
+            <img width="143" height="202" src="./index_files/Linux_medium.png" alt=" Livro de Linux" title=" Livro de Linux">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-jsf-jpa" class="block clearfix">
+            <h1 class="product-title">JSF e JPA</h1>
+            <img width="143" height="202" src="./index_files/JSF-JPA-280_medium.png" alt=" Livro de JSF e JPA" title=" Livro de JSF e JPA">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-scrum" class="block clearfix">
+            <h1 class="product-title">Scrum</h1>
+            <img width="143" height="202" src="./index_files/Scrum-280_medium.png" alt=" Livro de Scrum" title=" Livro de Scrum">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-agile" class="block clearfix">
+            <h1 class="product-title">Agile</h1>
+            <img width="143" height="202" src="./index_files/agile-ebook_medium.png" alt=" Livro de Agile" title=" Livro de Agile">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-nodejs" class="block clearfix">
+            <h1 class="product-title">Node.js</h1>
+            <img width="143" height="202" src="./index_files/node-ebook_medium.png" alt=" Livro de NodeJS" title=" Livro de NodeJS">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-adobe-lightroom" class="block clearfix">
+            <h1 class="product-title">Adobe Lightroom</h1>
+            <img width="143" height="202" src="./index_files/Lightroom_medium.png" alt=" Livro de Adobe Lightroom" title=" Livro de Adobe Lightroom">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-cdi" class="block clearfix">
+            <h1 class="product-title">CDI</h1>
+            <img width="143" height="202" src="./index_files/CDI-ebooks_medium.png" alt=" Livro de CDI" title=" Livro de CDI">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-jogos-android" class="block clearfix">
+            <h1 class="product-title">Jogos Android</h1>
+            <img width="143" height="202" src="./index_files/Jogos-Android-280_medium.png" alt=" Livro de Jogos Android com Cocos2D" title=" Livro de Jogos Android com Cocos2D">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-devops" class="block clearfix">
+            <h1 class="product-title">DevOps</h1>
+            <img width="143" height="202" src="./index_files/DevOps-beta_medium.png" alt=" Livro de DevOps" title=" Livro de DevOps">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-jogos-ios" class="block clearfix">
+            <h1 class="product-title">Jogos iOS</h1>
+            <img width="143" height="202" src="./index_files/jogos-iOS-ebook_medium.png" alt=" Livro de Jogos iOS com Cocos2D" title=" Livro de Jogos iOS com Cocos2D">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-kinect" class="block clearfix">
+            <h1 class="product-title">Microsoft Kinect</h1>
+            <img width="143" height="202" src="./index_files/Kinect-ebook_medium.png" alt=" Livro de Microsoft Kinect" title=" Livro de Microsoft Kinect">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/colecao-webdesign" class="block clearfix">
+            <h1 class="product-title">Coleção Web Design</h1>
+            <img width="143" height="202" src="./index_files/cwd-thumb-large_medium.png" alt=" Coleção Web Design" title=" Coleção Web Design">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/colecao-codigo-java-de-qualidade" class="block clearfix">
+            <h1 class="product-title">Coleção Código Java</h1>
+            <img width="143" height="202" src="./index_files/cjq-thumb-large_medium.png" alt=" Coleção Código Java de Qualidade" title=" Coleção Código Java de Qualidade">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-cucumber-rspec-tdd-bdd" class="block clearfix">
+            <h1 class="product-title">Cucumber e RSpec</h1>
+            <img width="143" height="202" src="./index_files/cucumber-rspec_medium.png" alt=" Livro de Cucumber e RSpec" title=" Livro de Cucumber e RSpec">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-web-mobile" class="block clearfix">
+            <h1 class="product-title">Web Mobile</h1>
+            <img width="143" height="202" src="./index_files/WebMobile-280_medium.png" alt=" Livro de Web Mobile" title=" Livro de Web Mobile">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-javascript-jquery" class="block clearfix">
+            <h1 class="product-title">jQuery e JavaScript</h1>
+            <img width="143" height="202" src="./index_files/jQuery-280_medium.png" alt=" Livro de jQuery e Javascript" title=" Livro de jQuery e Javascript">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-design-patterns" class="block clearfix">
+            <h1 class="product-title">Design Patterns</h1>
+            <img width="143" height="202" src="./index_files/DesignPatterns-280_medium.png" alt=" Livro de Design Patterns" title=" Livro de Design Patterns">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-html-css" class="block clearfix">
+            <h1 class="product-title">HTML5 e CSS3</h1>
+            <img width="143" height="202" src="./index_files/HTML5-CSS3-280_medium.png" alt=" Livro de HTML e CSS" title=" Livro de HTML e CSS">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-vraptor" class="block clearfix">
+            <h1 class="product-title">VRaptor</h1>
+            <img width="143" height="202" src="./index_files/vraptor-ebook_medium.png" alt=" Livro de VRaptor" title=" Livro de VRaptor">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-iphone-ipad-ios" class="block clearfix">
+            <h1 class="product-title">iOS, iPhone e iPad</h1>
+            <img width="143" height="202" src="./index_files/IOS-280_medium.png" alt=" Livro iPhone, iPad e iOS" title=" Livro iPhone, iPad e iOS">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-ruby-on-rails" class="block clearfix">
+            <h1 class="product-title">Rails 4</h1>
+            <img width="143" height="202" src="./index_files/Rails-280_medium.png" alt=" Mais que um tutorial, um livro completo de Ruby on Rails" title=" Mais que um tutorial, um livro completo de Ruby on Rails">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-spring-framework" class="block clearfix">
+            <h1 class="product-title">Spring Framework</h1>
+            <img width="143" height="202" src="./index_files/Spring-280_medium.png" alt=" Livro de Spring Framework" title=" Livro de Spring Framework">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-jsf-eficaz" class="block clearfix">
+            <h1 class="product-title">JSF Eficaz</h1>
+            <img width="143" height="202" src="./index_files/JSF-Eficaz-280_medium.png" alt=" Livro de boas práticas JSF" title=" Livro de boas práticas JSF">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-android" class="block clearfix">
+            <h1 class="product-title">Google Android</h1>
+            <img width="143" height="202" src="./index_files/Android-280_medium.png" alt=" Livro de Android" title=" Livro de Android">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-ruby" class="block clearfix">
+            <h1 class="product-title">Ruby</h1>
+            <img width="143" height="202" src="./index_files/Ruby-280_medium.png" alt=" Livro de Ruby" title=" Livro de Ruby">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-rest" class="block clearfix">
+            <h1 class="product-title">REST</h1>
+            <img width="143" height="202" src="./index_files/REST-beta_medium.png" alt=" Livro de REST" title=" Livro de REST">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-javafx" class="block clearfix">
+            <h1 class="product-title">JavaFX</h1>
+            <img width="143" height="202" src="./index_files/javafx-ebook_medium.png" alt=" Livro de JavaFX" title=" Livro de JavaFX">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-tdd-dotnet" class="block clearfix">
+            <h1 class="product-title">TDD com .NET</h1>
+            <img width="143" height="202" src="./index_files/TDD-NET-280_medium.png" alt=" Livro de TDD em .NET" title=" Livro de TDD em .NET">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-tdd" class="block clearfix">
+            <h1 class="product-title">TDD com Java</h1>
+            <img width="143" height="202" src="./index_files/TDD-280_medium.png" alt=" Livro de TDD com Java" title=" Livro de TDD com Java">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-web-design-responsivo" class="block clearfix">
+            <h1 class="product-title">Web Design Responsivo</h1>
+            <img width="143" height="202" src="./index_files/WebResponsivo-280_medium.png" alt=" Livro de Web Design Responsivo" title=" Livro de Web Design Responsivo">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-startup-guia" class="block clearfix">
+            <h1 class="product-title">Guia da Startup</h1>
+            <img width="143" height="202" src="./index_files/GuiaStartup-280_medium.png" alt=" Livro Guia da Startup" title=" Livro Guia da Startup">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-programacao" class="block clearfix">
+            <h1 class="product-title">Lógica de Programação</h1>
+            <img width="143" height="202" src="./index_files/LogicaDeProgramacao-280_medium.png" alt=" Livro de Lógica de Programação" title=" Livro de Lógica de Programação">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-arquitetura-java" class="block clearfix">
+            <h1 class="product-title">Arquitetura Java</h1>
+            <img width="143" height="202" src="./index_files/arquitetura_site_medium.jpg" alt=" Livro de Arquitetura Java" title=" Livro de Arquitetura Java">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-linguagem-c" class="block clearfix">
+            <h1 class="product-title">Linguagem C</h1>
+            <img width="143" height="202" src="./index_files/linguagemccompleta_medium.png" alt=" Livro de Linguagem C" title=" Livro de Linguagem C">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/livro-ciencia-da-computacao-com-jogos" class="block clearfix">
+            <h1 class="product-title">Ciência da computação</h1>
+            <img width="143" height="202" src="./index_files/capa_intro_cc_jogos_medium.png" alt=" Livro de introdução à ciência da computação com jogos" title=" Livro de introdução à ciência da computação com jogos">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.casadocodigo.com.br/products/vale-presente" class="block clearfix">
+            <h1 class="product-title">Vale Presente</h1>
+            <img width="143" height="202" src="./index_files/vale2-thumb-max_medium.jpeg" alt=" Vale Presente" title=" Vale Presente">
+            <small class="buy-button">Compre</small>
+          </a>
+        </li>
+      
+    </ul>
+
+    <h2 class="cdc-call">Diferenciais da Casa do Código</h2>
+   
+    <ul id="cdc-diferenciais" class="clearfix">
+      <li class="col-left">
+        <h3>E-books sem DRM. Leia onde quiser</h3>
+        <p>
+          <span class="sprite" id="sprite-drm"></span>
+          Nossos e-books não possuem DRM, ou seja, você pode ler em qualquer computador, tablet e smartphone.
+        </p>
+      </li>
+      <li class="col-right">
+        <h3>Autores de renome na comunidade</h3>
+        <p>
+          <span class="sprite" id="sprite-renome"></span>
+          Autores que participam ativamente na comunidade com Open Source, listas de discussão, grupos e mais.
+        </p>
+      </li>
+      <li class="col-left">
+        <h3>Receba atualizações dos e-books</h3>
+        <p>
+          <span class="sprite" id="sprite-atualizacoes"></span>
+          Quando você compra um e-book, automaticamente tem direito às atualizações e correções dele.
+        </p>
+      </li>
+      <li class="col-right">
+        <h3>Livros com curadoria da Caelum</h3>
+        <p>
+          <span class="sprite" id="sprite-caelum"></span>
+          Desenvolvedores experientes que avaliam e revisam os livros constantemente.
+        </p>
+      </li>
+    </ul>
+
+
+  
+</section>
+
+
+  <footer id="layout-footer">
+    <div class="clearfix container">
+        
+
+        
+ 
+      <div id="cdc-footer">
+        <p class="footer-title">Livros de Ruby On Rails</p>
+        <ul>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-ruby-on-rails">Livro de Ruby on Rails</a></li>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-ruby">Livro de Ruby</a></li>
+        </ul>
+           <p class="footer-title">Livros de Mobile</p>
+        <ul>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-android">Livro de Android</a></li>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-iphone-ipad-ios">Livro de iPhone, iPad e iOS</a></li>
+        </ul>
+        <p class="footer-title">Livros de Web Design</p>
+        <ul>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-html-css">Livro de HTML e CSS</a></li>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-web-design-responsivo">Livro de Web Design Responsivo</a></li>
+        </ul>
+      </div>
+      <div id="books-footer">
+        <p class="footer-title">Livros de Java</p>
+        <ul>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-jsf-jpa">Livro de JSF e JPA</a></li>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-soa-webservices">Livro de SOA e Webservices</a></li>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-spring-framework">Livro de Spring Framework</a></li>
+        </ul>
+        <p class="footer-title">E mais...</p>
+        <ul>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-tdd">Livro de TDD</a></li>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-startup-guia">Livro de Startup</a></li>
+          <li><a href="http://www.casadocodigo.com.br/products/livro-programacao">Livro de Programação</a></li>
+          <li class="social-links">
+            <a href="http://www.twitter.com/casadocodigo" target="_blank" id="twitter">Twitter</a>
+            <a href="http://www.facebook.com/casadocodigo" target="_blank" id="facebook">Facebook</a>
+          </li>
+          <li><img class="accepts-paypal" src="./index_files/accepts_paypal.png" border="0" alt="Paypal"></li>
+        </ul>
+
+      </div>
+      <div id="social-footer">
+        <p class="footer-title">Receba as novidades e lançamentos</p>
+        <div id="form-newsletter">                  
+          <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dFhxZ2tDalFiclU4T2FLZVY4UXVUc2c6MQ&embedded=true&ifq" method="POST" id="ss-form" class="form-newsletter">
+            <input type="email" name="entry.0.single" value="" class="ss-q-short" id="entry_0" placeholder="seu@email.com">
+            <input type="hidden" name="pageNumber" value="0">
+            <input type="hidden" name="backupCache" value="">
+                <input type="submit" name="submit" value="Quero Receber!" id="submit-newsletter">
+          </form>
+          <ul>
+          <li class="ie8"><a href="https://docs.google.com/spreadsheet/viewform?formkey=dFhxZ2tDalFiclU4T2FLZVY4UXVUc2c6MQ&ifq">Cadastre-se na newsletter</a></li>
+          </ul>
+        </div>
+         <p class="footer-title">Links da Casa do Código</p>
+         <ul>
+          <li><a href="http://www.casadocodigo.com.br/pages/sobre-a-casa-do-codigo">Sobre a Casa do Código</a></li>
+          <li><a href="http://www.casadocodigo.com.br/pages/perguntas-frequentes">Perguntas Frequentes</a></li>
+          <li><a href="http://www.caelum.com.br/">Caelum - Ensino e Inovação</a></li>
+         </ul>
+      </div>
+    </div>
+  </footer>
+
+  
+    <script> 
+    var fb_param = {};
+    fb_param.pixel_id = '6009930057400';
+    fb_param.value = '0.00';
+    fb_param.currency = 'USD';
+    (function(){
+          var fpw = document.createElement('script');
+            fpw.async = true;
+              fpw.src = '//connect.facebook.net/en_US/fp.js';
+                var ref = document.getElementsByTagName('script')[0];
+                  ref.parentNode.insertBefore(fpw, ref);
+    })();
+    </script>
+    <noscript>&lt;img height="1" width="1" alt="" style="display:none"
+    src="https://www.facebook.com/offsite_event.php?id=6009930057400&amp;amp;value=0&amp;amp;currency=USD"
+    /&gt;</noscript>
+
+   
+   
+
+  
+  
+
+  <script>
+    $(function() {
+      $('a[href^="http"]')
+         .not('.dont-track')
+         .filter(function(index) {
+            var ccb = $(this).attr('href').indexOf("casadocodigo.com.br");
+            if (ccb == -1) ccb = $(this).attr('href').indexOf("localhost");
+
+            return ccb != 7 && ccb != 11;
+         })
+       .click(function(event) {
+         var domain = this.href;
+         domain = domain.substring(7);
+         domain = domain.substring(0, domain.indexOf('/'));
+
+         if (domain.substring(0, 4) == 'www.')
+           domain = domain.substring(4);
+           
+         _gaq.push(['_trackPageview', '/LinkExterno/' + this.href]);
+       });
+     });
+  </script>
+
+
+<img src="./index_files/shopify" style="float: right;"></body></html>
